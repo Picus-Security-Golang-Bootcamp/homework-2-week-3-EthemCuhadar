@@ -72,6 +72,18 @@ func init(){
 	BookDatabase.Items = append(BookDatabase.Items, Book001, Book002, Book003, Book004, Book005)
 }
 
+// ShowInfo - Prints relative information about the book.
+func (b *Book) ShowInfo(){
+	fmt.Println("Book ID:     ", b.ID)
+	fmt.Println("Name:        ", b.Name)
+	fmt.Println("Page Number: ", b.PageNumber)
+	fmt.Println("Stock Number:", b.StockNumber)
+	fmt.Println("Price:       ", b.Price)
+	fmt.Println("Stock Code:  ", b.StockCode)
+	fmt.Println("ISBN:        ", b.ISBN)
+	fmt.Println("Author:      ", b.Author)
+}
+
 // SetID - Sets the ID field and returns the book.
 func (b *Book) SetID(i int) *Book {
 	b.ID = i
