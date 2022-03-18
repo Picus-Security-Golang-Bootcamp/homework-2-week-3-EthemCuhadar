@@ -10,6 +10,8 @@ import (
 // the book is deleted successfully. Otherwise, it will print out error message
 // and returns false.
 func DeleteBook(s []string)bool{
+	data.BookDatabase.Mux.Lock()
+	defer data.BookDatabase.Mux.Unlock()
 	for _, b := range data.BookDatabase.Items{
 		if b.ID == s[2]{
 			fmt.Println("--------------- Related Book ----------------")

@@ -9,6 +9,8 @@ import (
 // database and returns boolean (if there is no book 
 // in database it returns false).
 func ListBook(s []string)bool{
+	data.BookDatabase.Mux.Lock()
+	defer data.BookDatabase.Mux.Unlock()
 	if len(data.BookDatabase.Items) == 0{
 		return false
 	}

@@ -12,6 +12,8 @@ import (
 // should be a valid number. Moreover, if the quantity is greater than stock
 // number of book, a message will be seen to user.
 func BuyBook(s []string)bool{
+	data.BookDatabase.Mux.Lock()
+	defer data.BookDatabase.Mux.Unlock()
 	quantity, err := strconv.Atoi(s[3])
 	if err != nil{
 		fmt.Println("Please enter a valid number")

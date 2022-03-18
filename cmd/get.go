@@ -10,6 +10,8 @@ import (
 // user doesnt match in database, the function will return false. Otherwise,
 // the user can see all information (relative fields) about the book.
 func GetBook(s []string)bool{
+	data.BookDatabase.Mux.Lock()
+	defer data.BookDatabase.Mux.Unlock()
 	for _, b := range data.BookDatabase.Items{
 		if b.ID == s[2]{
 			fmt.Println("--------------- Related Book ----------------")
