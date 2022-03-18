@@ -34,9 +34,9 @@ func API(s []string){
 		if _, ok := apiMap[command]; ok{
 			apiMap[command](s)
 		}else{
-			ErrorCases("Check the command again")
+			fmt.Println("Check the command again")
 		}
 	}else{
-		ErrorCases("Please enter a command")
+		Error("Please enter a command")
 	}
 }
