@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
+	api "homework-2-week-3-EthemCuhadar/API"
+	"os"
 )
 
 func main(){
-	Args := os.Args
-	fmt.Println(Args[1:])
+	api.API(os.Args)
 }
