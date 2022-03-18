@@ -13,7 +13,6 @@ import (
 // one book which contain the searching word, the function will
 // print out books which are related to that word.
 func SearchBook(l []string)bool{
-	fmt.Println("search working...")
 	s := stringConcatenator(l)
 	fmt.Println("------------- Related Books ----------------")
 	fmt.Printf("----------- Searched for(%v) --------------\n", s)
