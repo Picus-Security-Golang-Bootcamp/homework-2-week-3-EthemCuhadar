@@ -19,7 +19,6 @@ import (
 func API(s []string){
 
 	if len(s) > 1{
-		fmt.Println("api working...")
 		ErrorCases(s)
 
 		command := strings.ToLower(s[1])
