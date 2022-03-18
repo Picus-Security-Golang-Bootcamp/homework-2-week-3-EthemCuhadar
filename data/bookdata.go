@@ -5,18 +5,19 @@ import (
 	"bookstore/books"
 )
 
+// Decleare books variables.
 var Book001 = books.Book{}
 var Book002 = books.Book{}
 var Book003 = books.Book{}
 var Book004 = books.Book{}
 var Book005 = books.Book{}
 
+// Decleare book list variable.
 var BookDatabase = books.BookList{}
 
 func init(){
 	
-	fmt.Println("data is working...")
-
+	// Set necessary fields of books.
 	Book001.SetID("1001")
 	Book001.SetName("Don Quixote")
 	Book001.SetPageNumber(1072)
@@ -62,5 +63,6 @@ func init(){
 	Book005.SetISBN("6451418506")
 	Book005.SetAuthor("Gustave Flaubert")
 	
+	// Store the books in book list.
 	BookDatabase.Items = append(BookDatabase.Items, Book001, Book002, Book003, Book004, Book005)
 }
