@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"bookstore/data"
+	"homework-2-week-3-EthemCuhadar/data"
 )
 
 // GetBook - Allows the user to see information about a book by entering

@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 	"strings"
-	"bookstore/data"
+	"homework-2-week-3-EthemCuhadar/data"
 )
 
 // SearchBook - Allows the user to search a book with full name or

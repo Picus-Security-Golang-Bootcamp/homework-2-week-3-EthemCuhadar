@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"bookstore/data"
+	"homework-2-week-3-EthemCuhadar/data"
 )
 
 // ListBook - Prints out the books which are stored in

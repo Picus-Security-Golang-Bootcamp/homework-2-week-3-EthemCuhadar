@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"bookstore/data"
+	"homework-2-week-3-EthemCuhadar/data"
 )
 
 // DeleteBook -  Allows to delete a book from database. The function will

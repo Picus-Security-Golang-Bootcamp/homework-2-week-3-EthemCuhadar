@@ -2,7 +2,7 @@ package API
 
 import (
 	"fmt"
-	"bookstore/cmd"
+	"homework-2-week-3-EthemCuhadar/cmd"
 	"strings"
 )
 

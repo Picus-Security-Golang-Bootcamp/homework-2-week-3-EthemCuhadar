@@ -2,7 +2,7 @@ package data
 
 import (
 	"fmt"
-	"bookstore/books"
+	"homework-2-week-3-EthemCuhadar/books"
 )
 
 // Decleare books variables.
