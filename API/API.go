@@ -19,7 +19,9 @@ import (
 func API(s []string){
 
 	if len(s) > 1{
-		ErrorCases(s)
+		if ErrorCases(s){
+			return
+		}
 
 		command := strings.ToLower(s[1])
 

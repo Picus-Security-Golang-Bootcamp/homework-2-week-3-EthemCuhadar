@@ -8,35 +8,40 @@ import (
 // ErrorCases - Prints out error message when user dont enter
 // a valid statement on command line arguments. The errors are considered
 // for all commands seperately.
-func ErrorCases(s []string){
+func ErrorCases(s []string)bool{
 
 	command := strings.ToLower(s[1])
 	
 	if command == "list"{
 		if len(s) > 2{
-			Error("")
+			Error("Check the usage of list again")
+			return true
 		}
 	}else if command == "search"{
 		if len(s) < 3{
 			Error("Enter the book name to search")
+			return true
 		}
 	}else if command == "get"{
 		if len(s) < 3{
 			Error("Enter the book ID go get information")
+			return true
 		}else if len(s) > 3{
 			Error("Please enter book ID only")
+			return true
 		}
 	}else if command == "delete"{
 		if len(s) < 3{
 			Error("Enter the book ID to delete")
+			return true
 		}
 	}else if command == "buy"{
 		if len(s) != 4{
-			Error("Check the book ID and quantity to buy")
+			Error("Check the book ID and quantity again")
+			return true
 		}
-	}else{
-		return
 	}
+	return false
 }
 
 // Error - prints out usage of program when user make a 
