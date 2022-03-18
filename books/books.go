@@ -1,5 +1,9 @@
 package books
 
+import (
+	"fmt"
+)
+
 // Book - Struct for books with related fields.
 type Book struct {
 	ID			string
@@ -58,4 +62,17 @@ func (b *Book) SetISBN(s string) *Book {
 func (b *Book) SetAuthor(s string) *Book {
 	b.Author = s
 	return b
+}
+
+// ShowInfo - Prints out information about book.
+func (b *Book) ShowInfo(){
+	fmt.Println("Book ID:     ", b.ID)
+	fmt.Println("Name:        ", b.Name)
+	fmt.Println("Page Number: ", b.PageNumber)
+	fmt.Println("Stock Number:", b.StockNumber)
+	fmt.Println("Price:       ", b.Price, "$")
+	fmt.Println("Stock Code:  ", b.StockCode)
+	fmt.Println("ISBN:        ", b.ISBN)
+	fmt.Println("Author:      ", b.Author)
+	fmt.Println("--------------------------------------------")
 }
