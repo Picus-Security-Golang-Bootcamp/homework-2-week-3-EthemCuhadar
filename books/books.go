@@ -2,19 +2,19 @@ package books
 
 // Book - Struct for books with related fields.
 type Book struct {
-	ID			int
+	ID			string
 	Name		string
 	PageNumber	int
 	StockNumber	int
 	Price		float64
-	StockCode	int
-	ISBN		int
+	StockCode	string
+	ISBN		string
 	Author		string
 }
 
 // SetID - Sets the ID field and returns the book.
-func (b *Book) SetID(i int) *Book {
-	b.ID = i
+func (b *Book) SetID(s string) *Book {
+	b.ID = s
 	return b
 }
 
@@ -43,14 +43,14 @@ func (b *Book) SetPrice(f float64) *Book {
 }
 
 // SetStockCode - Sets the StockCode field and returns the book.
-func (b *Book) SetStockCode(i int) *Book {
-	b.StockCode = i
+func (b *Book) SetStockCode(s string) *Book {
+	b.StockCode = s
 	return b
 }
 
 // SetISBN - Sets the ISBN field and returns the book.
-func (b *Book) SetISBN(i int) *Book {
-	b.ISBN = i
+func (b *Book) SetISBN(s string) *Book {
+	b.ISBN = s
 	return b
 }
 

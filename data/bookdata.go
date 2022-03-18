@@ -1,7 +1,6 @@
 package data
 
 import (
-	"fmt"
 	"homework-2-week-3-EthemCuhadar/books"
 )
 
